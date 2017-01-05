@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CS478Project3App3</string>
+    <string name="option1">Hotel</string>
+    <string name="option2">Restaurant</string>
+
+    <string-array name="Hotels">
+        <item>Hotel Blake</item>
+        <item>Hotel Congress</item>
+        <item>Hilton Chicago</item>
+        <item>Chicago Marriott</item>
+        <item>Hotel Palomar</item>
+        <item>Renaissance Chicago</item>
+    </string-array>
+
+    <string-array name="Restaurants">
+        <item>Girl and the Goat</item>
+        <item>Lou Mitchell\'s</item>
+        <item>The Berghoff</item>
+        <item>Momotaro</item>
+        <item>The Purple Pig</item>
+        <item>Grace</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

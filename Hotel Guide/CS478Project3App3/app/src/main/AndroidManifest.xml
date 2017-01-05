@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ridhi Rustagi -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.ridhirustagi.cs478project3app3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hotel/Restaurant Guide"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HotelDisplayActivity" />
+
+        <receiver
+            android:name=".HotelReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="hotelReceiver">
+            <intent-filter android:priority="10">
+                <action android:name="com.example.ridhirustagi.cs478project3app1.showToastHotel" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".RestaurantReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="restReceiver">
+            <intent-filter android:priority="10">
+                <action android:name="com.example.ridhirustagi.cs478project3app1.showToastRestaurant" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".HotelListFragment" />
+        <activity android:name=".RestaurantDisplayActivity" />
+    </application>
+
+</manifest>
